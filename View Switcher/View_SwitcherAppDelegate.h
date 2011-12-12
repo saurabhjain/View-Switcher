@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class SwitchViewController;
 @interface View_SwitcherAppDelegate : NSObject <UIApplicationDelegate> {
-
+    
+    IBOutlet UIWindow *window;
+    IBOutlet SwitchViewController *switchViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) SwitchViewController *swicthViewController;
 
 @end
