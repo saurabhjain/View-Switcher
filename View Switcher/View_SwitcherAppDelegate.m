@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     [window addSubview:switchViewController.view];
     [window makeKeyAndVisible];
-    //return YES;
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
