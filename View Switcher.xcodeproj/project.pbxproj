@@ -248,12 +248,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SAURABH JAIN (Z8CYM43SPX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SAURABH JAIN (Z8CYM43SPX)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "View Switcher/View Switcher-Prefix.pch";
 				INFOPLIST_FILE = "View Switcher/View Switcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5253D176-CF00-435A-9F67-E2760E406C4D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5253D176-CF00-435A-9F67-E2760E406C4D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -262,11 +267,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SAURABH JAIN (Z8CYM43SPX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SAURABH JAIN (Z8CYM43SPX)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "View Switcher/View Switcher-Prefix.pch";
 				INFOPLIST_FILE = "View Switcher/View Switcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5253D176-CF00-435A-9F67-E2760E406C4D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5253D176-CF00-435A-9F67-E2760E406C4D";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +301,7 @@
 				0990B2E21495D4E40048D1CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class BlueViewController;
+@class YellowViewController;
 
-@interface SwitchViewController : SwitchViewController {
+@interface SwitchViewController : UIViewController {
     
+    YellowViewController * yellowViewController;
+    BlueViewController * blueViewController;
 }
+
+@property (retain, nonatomic) YellowViewController *yellowViewController;
+@property (retain, nonatomic) BlueViewController *blueViewController;
+
+- (IBAction)swicthViews:(id)sender;
 
 @end

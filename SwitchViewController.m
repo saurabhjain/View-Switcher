@@ -7,9 +7,31 @@
 //
 
 #import "SwitchViewController.h"
+#import "BlueViewController.h"
+#import "YellowViewController.h"
 
 
 @implementation SwitchViewController
+@synthesize blueViewController;
+@synthesize yellowViewController;
+
+- (IBAction)swicthViews:(id)sender 
+{
+ // Lazy load - load yellow nib first time the button is pressed.
+    if (self.yellowViewController == nil) {
+        YellowViewController *yellowController = [[YellowViewController alloc] initWithNibName:@"YellowViewController" bundle:nil];
+        self.yellowViewController = yellowController;
+        [yellowController release];
+    }
+    if(self.blueViewController.view.superview == nil) {
+        [yellowViewController.view removeFromSuperview];
+        [self.view insertSubview:blueViewController.view atIndex:0];
+    }
+    else {
+        [blueViewController.view removeFromSuperview];
+        [self.view insertSubview:yellowViewController.view atIndex:0];
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +44,8 @@
 
 - (void)dealloc
 {
+    [yellowViewController release];
+    [blueViewController release];
     [super dealloc];
 }
 
@@ -37,6 +61,10 @@
 
 - (void)viewDidLoad
 {
+    BlueViewController *blueController = [[BlueViewController alloc] initWithNibName:@"BlueViewController" bundle:nil];
+    self.blueViewController = blueController;
+    [self.view insertSubview:blueController.view atIndex:0];
+    [blueController release];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

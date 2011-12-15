@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface YellowViewController : YellowViewController {
+@interface YellowViewController : UIViewController {
     
 }
+
+- (IBAction)yellowButtonPressed:(id)sender;
 
 @end

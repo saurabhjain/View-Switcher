@@ -11,6 +11,13 @@
 
 @implementation BlueViewController
 
+- (IBAction)blueButtonPressed:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Blue View button pressed" message:@"You pressed the button on the Blue View" delegate:nil cancelButtonTitle:@"Yes I did !" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

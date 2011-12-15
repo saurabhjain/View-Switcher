@@ -14,13 +14,13 @@
 
 //@synthesize window=_window;
 @synthesize window;
-@synthesize swicthViewController;
+@synthesize switchViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     [window addSubview:switchViewController.view];
-    [self.window makeKeyAndVisible];
+    [window makeKeyAndVisible];
     //return YES;
 }
 
@@ -66,7 +66,7 @@
 - (void)dealloc
 {
     [window release];
-    [swicthViewController release];
+    [switchViewController release];
     //[_window release];
     [super dealloc];
 }

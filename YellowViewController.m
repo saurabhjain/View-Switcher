@@ -11,6 +11,13 @@
 
 @implementation YellowViewController
 
+- (IBAction)yellowButtonPressed:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yellow View button pressed" message:@"You pressed the button on the Yellow View" delegate:nil cancelButtonTitle:@"Yes I did !" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
