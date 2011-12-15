@@ -30,32 +30,32 @@
     [UIView setAnimationDuration:1.25];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     
+    UIViewController *coming = nil;
+    UIViewController *going = nil;
+    UIViewAnimationTransition transition;
+    
     if(self.blueViewController.view.superview == nil) {
         
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
-        [blueViewController viewWillAppear:YES];
-        [yellowViewController viewWillDisappear:YES];
-        
-        [yellowViewController.view removeFromSuperview];
-        [self.view insertSubview:blueViewController.view atIndex:0];
-        
-        [yellowViewController viewDidDisappear:YES];
-        [blueViewController viewDidAppear:YES];
+        coming = blueViewController;
+        going = yellowViewController;
+        transition = UIViewAnimationTransitionFlipFromLeft;
    
     }
     else {
-    
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
-        [yellowViewController viewWillAppear:YES];
-        [blueViewController viewWillDisappear:YES];
         
-        [blueViewController.view removeFromSuperview];
-        [self.view insertSubview:yellowViewController.view atIndex:0];
-        
-        [blueViewController viewDidDisappear:YES];
-        [yellowViewController viewDidAppear:YES];
+        coming = yellowViewController;
+        going = blueViewController;
+        transition = UIViewAnimationTransitionFlipFromRight;
         
     }
+    
+    [UIView setAnimationTransition:transition forView:self.view cache:YES];
+    [coming viewWillAppear:YES];
+    [going viewWillDisappear:YES];
+    [going.view removeFromSuperview];
+    [self.view insertSubview: coming.view atIndex:0];
+    [going viewDidDisappear:YES];
+    [coming viewDidAppear:YES];
     
     [UIView commitAnimations];
 }
