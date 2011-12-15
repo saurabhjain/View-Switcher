@@ -3042,9 +3042,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>345668429.05373102</real>
-		<string>{0, 1379}</string>
-		<string>{354, 0}</string>
+		<real>345671020.109833</real>
+		<string>{248, 1721}</string>
+		<string>{1965, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3329,7 +3329,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>345670059.25762302</real>
+		<real>345670236.192707</real>
 		<string>{0, 1076}</string>
 		<string>{523, 0}</string>
 		<dict>
@@ -4603,7 +4603,7 @@
 				<integer>404</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>345670007.96985197</real>
+			<real>345670986.48429799</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -4614,7 +4614,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 11:26 AM</string>
+		<string>Today at 11:43 AM</string>
 		<integer>106</integer>
 		<string>View Switcher</string>
 		<dict>
@@ -4720,11 +4720,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>420</integer>
+					<integer>421</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>422</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>424</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4741,10 +4745,6 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>311</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>424</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4805,6 +4805,24 @@
 				<integer>418</integer>
 			</dict>
 		</dict>
+		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/SwitchViewController.m</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>98</integer>
+			</dict>
+			<key>NS.base</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>NS.relative</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>420</integer>
+			</dict>
+		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/YellowViewController.m</string>
 		<dict>
 			<key>$class</key>
@@ -4837,7 +4855,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>421</integer>
+				<integer>423</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/View%20Switcher/en.lproj/MainWindow.xib</string>
@@ -4855,7 +4873,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>423</integer>
+				<integer>425</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/View%20Switcher/View_SwitcherAppDelegate.m</string>
@@ -4873,7 +4891,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>425</integer>
+				<integer>427</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/SwitchViewController.h</string>
@@ -4891,7 +4909,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>427</integer>
+				<integer>429</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/View%20Switcher/View%20Switcher-Info.plist</string>
@@ -4909,7 +4927,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>429</integer>
+				<integer>431</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/View%20Switcher/en.lproj/InfoPlist.strings</string>
@@ -4927,7 +4945,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>431</integer>
+				<integer>433</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/BlueViewController.m</string>
@@ -4945,7 +4963,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>433</integer>
+				<integer>435</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/SwitchViewController.xib</string>
@@ -4963,7 +4981,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>435</integer>
+				<integer>437</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/View%20Switcher/View_SwitcherAppDelegate.h</string>
@@ -4981,7 +4999,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>437</integer>
+				<integer>439</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/YellowViewController.h</string>
@@ -4999,28 +5017,10 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>439</integer>
-			</dict>
-		</dict>
-		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/BlueViewController.h</string>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>98</integer>
-			</dict>
-			<key>NS.base</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>0</integer>
-			</dict>
-			<key>NS.relative</key>
-			<dict>
-				<key>CF$UID</key>
 				<integer>441</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/SwitchViewController.m</string>
+		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/BlueViewController.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5221,7 +5221,7 @@
 		<string>IDEWorkspaceTabControllerDesignAreaSplitView</string>
 		<string>IDEShowUtilities</string>
 		<string>IDEEditorArea</string>
-		<string>YellowViewController.m</string>
+		<string>SwitchViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5493,7 +5493,7 @@
 			</array>
 		</dict>
 		<string>View Switcher</string>
-		<string>YellowViewController.m</string>
+		<string>SwitchViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6599,7 +6599,7 @@
 			<key>documentURL</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>262</integer>
+				<integer>250</integer>
 			</dict>
 			<key>timestamp</key>
 			<dict>
@@ -6652,10 +6652,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>345670059.26059198</real>
-		<string>{0, 1076}</string>
-		<string>{523, 0}</string>
-		<string>-yellowButtonPressed:</string>
+		<real>345671020.11397398</real>
+		<string>{248, 1721}</string>
+		<string>{1965, 0}</string>
+		<string>-swicthViews:</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -6674,7 +6674,7 @@
 				<integer>595</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/YellowViewController.m</string>
+		<string>file://localhost/Users/Saurabh/workspace/View%20Switcher/SwitchViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>

@@ -19,18 +19,45 @@
 {
  // Lazy load - load yellow nib first time the button is pressed.
     if (self.yellowViewController == nil) {
+        
         YellowViewController *yellowController = [[YellowViewController alloc] initWithNibName:@"YellowViewController" bundle:nil];
         self.yellowViewController = yellowController;
         [yellowController release];
+        
     }
+    
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:1.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    
     if(self.blueViewController.view.superview == nil) {
+        
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+        [blueViewController viewWillAppear:YES];
+        [yellowViewController viewWillDisappear:YES];
+        
         [yellowViewController.view removeFromSuperview];
         [self.view insertSubview:blueViewController.view atIndex:0];
+        
+        [yellowViewController viewDidDisappear:YES];
+        [blueViewController viewDidAppear:YES];
+   
     }
     else {
+    
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+        [yellowViewController viewWillAppear:YES];
+        [blueViewController viewWillDisappear:YES];
+        
         [blueViewController.view removeFromSuperview];
         [self.view insertSubview:yellowViewController.view atIndex:0];
+        
+        [blueViewController viewDidDisappear:YES];
+        [yellowViewController viewDidAppear:YES];
+        
     }
+    
+    [UIView commitAnimations];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
